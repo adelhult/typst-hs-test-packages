@@ -1,0 +1,1 @@
+#let x = selector(<foo:bar>)
