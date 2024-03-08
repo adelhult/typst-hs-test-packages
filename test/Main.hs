@@ -65,7 +65,7 @@ sanityCheck = do
 main :: IO ()
 main =
     let tests = TestList <$> sequence [
-         -- labelTests "Package parse tests" packages,
+         labelTests "Package parse tests" packages,
          labelTests "Counter-examples parse tests" counterExamples,
          sanityCheck] in
     tests >>= void . runTestTT
